@@ -10,9 +10,9 @@ class Environment:
         self._technology = None
 
     @classmethod
-    def new_for_test(cls, test_name):
+    def new_for_test(cls):
         environment = cls()
-        environment.setup_technology_for_test(test_name=test_name)
+        environment.setup_technology_for_test()
         return environment
 
     @classmethod
@@ -28,9 +28,9 @@ class Environment:
 
         raise ValueError("Technology is not valid")
 
-    def setup_technology_for_test(self, test_name):
+    def setup_technology_for_test(self):
         technology = self.technology()
-        technology.setup_technology_for_test(test_name=test_name)
+        technology.setup_technology_for_test()
         self._technology = technology
         return self._technology
 

@@ -12,7 +12,7 @@ class Technology(ABC):
         ...
 
     @abstractmethod
-    def setup_technology_for_test(self, test_name):
+    def setup_technology_for_test(self):
         ...
 
     @abstractmethod
