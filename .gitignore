@@ -1,0 +1,14 @@
+# Environment
+.env*
+!.env.*.example
+
+# Intellij IDEA
+.idea
+*.iml
+
+# Python
+**/__pycache__/
+
+# SQLite
+*.sqlite3
+*.db
